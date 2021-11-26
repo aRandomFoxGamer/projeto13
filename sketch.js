@@ -3,7 +3,7 @@ var gardenImg,rabbitImg;
 var appleImg, apple;
 var orangeImg, orangeLeaf, orange;
 var redImg, redLeaf, red;
-var select_sprites = Math.round(random(1, 3));
+
 
 function preload(){
   gardenImg = loadImage("garden.png");
@@ -31,7 +31,7 @@ function draw() {
   background(0);
 
   console.log(frameCount);
-
+  var select_sprites = Math.round(random(1, 3));
   edges= createEdgeSprites();
   rabbit.collide(edges);
   rabbit.x = World.mouseX;
